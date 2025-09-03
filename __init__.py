@@ -1,0 +1,11 @@
+DROP DATABASE IF EXISTS postal;
+CREATE DATABASE postal;
+USE postal;
+
+CREATE TABLE pcode (
+  id INT NOT NULL AUTO_INCREMENT,
+  postcode VARCHAR(4)  NOT NULL,
+  locality VARCHAR(40) NOT NULL,
+  state VARCHAR(3)     NOT NULL,
+  PRIMARY KEY (id)
+);
